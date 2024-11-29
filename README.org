@@ -1,0 +1,27 @@
+#+TITLE: dired-two-step
+#+AUTHOR: Laluxx
+
+A simple two-step copy-paste solution for dired
+that allows collecting multiple files before pasting.
+
+* Usage
+
+Press =y= on individual files to add them to a temporary copy list:
+
+On a file: adds it to the copy list
+On marked files: adds all marked files to the copy list
+Duplicate files are automatically ignored
+
+Press =C-y= in any dired buffer to paste all collected files.
+The copy list is automatically cleared after pasting.
+
+| Key   | Description                |
+|-------+----------------------------|
+| =C-c l= | dired-two-step-show-copied |
+| =C-c x= | dired-two-step-clear       |
+| =y=     | dired-two-step-smart-copy  |
+| =C-y=   | dired-two-step-paste       |
+
+* TODO's [0/2]
+- [ ] Pulse the line when we copy
+- [ ] Pulse the region when we paste
